@@ -1,0 +1,8 @@
+tuxtype-*.pkg.tar.zst
+tuxtype-*.pkg.tar.xz
+tuxtype-*.tar.gz
+tuxtype-*.log
+PKGBUILD-namcap.log
+tuxtype-upstream-*/
+pkg/
+src/

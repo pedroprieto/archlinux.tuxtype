@@ -1,0 +1,30 @@
+diff --git a/stc/SDL_extras.c b/src/SDL_extras.c
+index b1ebe97..81f1d4e 100644
+--- a/src/SDL_extras.c
++++ b/src/SDL_extras.c
+@@ -1337,19 +1337,20 @@ DEBUGCODE
+ 
+   dstrect.x = 1;
+   dstrect.y = 1;
+-  SDL_BlitSurface(white_letters, NULL, bg, &dstrect);
+-  SDL_FreeSurface(white_letters);
++  /*SDL_BlitSurface(white_letters, NULL, bg, &dstrect);
++  SDL_FreeSurface(white_letters);*/
+ 
+   /* --- Convert to the screen format for quicker blits --- */
+-  SDL_SetColorKey(bg, SDL_SRCCOLORKEY|SDL_RLEACCEL, color_key);
+-  out = SDL_DisplayFormatAlpha(bg);
++  /*SDL_SetColorKey(bg, SDL_SRCCOLORKEY|SDL_RLEACCEL, color_key);
++  out = SDL_DisplayFormatAlpha(bg)*/
+   SDL_FreeSurface(bg);
+ 
+ DEBUGCODE
+   { fprintf( stderr, "\nLeaving BlackOutline(): \n"); }
+ 
+ 
+-  return out;
++  /*return out;*/
++  return white_letters;
+ }
+ 
+ 
